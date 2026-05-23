@@ -33,9 +33,3 @@ PinWarp是一个Minecraft Bukkit插件，允许玩家创建和传送到地标。
 ## 依赖
 - 服务器必须运行Bukkit 1.20.1或更高版本
 - 如需使用经济功能，服务器需要安装Vault和兼容的经济插件（如Essentials）
-
-## 作者
-miluo
-
-## 版本
-1.0
