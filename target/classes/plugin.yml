@@ -1,0 +1,16 @@
+name: PinWarp
+version: 1.0.7
+author: _Menf_
+main: top.pinkoc.pinwarp.PinWarp
+api-version: 1.20
+commands:
+  pinwarp:
+    description: Main command for PinWarp plugin
+    usage: /pinwarp <create|list|tp|setprice>
+permissions:
+  pinwarp.use:
+    description: Allows using PinWarp features
+    default: true
+  pinwarp.admin:
+    description: Allows administrative actions for PinWarp
+    default: op
