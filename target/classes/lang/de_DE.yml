@@ -1,0 +1,79 @@
+pinwarp:
+  setprice: "Bitte verwende /pw setprice <Warp> <Preis>"
+  onlyplayersend: "Nur Spieler können diesen Befehl verwenden."
+  unknown: "Unbekannter oder falscher Befehl. Verwende /pw <create|list|tp|setprice>"
+  teleportwarps: "Bitte verwende /pw tp <Warp>"
+  loadon: "PinWarp wurde aktiviert!"
+  loadoff: "PinWarp wurde deaktiviert!"
+  inputprice: "Bitte gib einen gültigen Preis ein!"
+  createwarps: "Bitte verwende /pw create <Warpname>"
+menu:
+  delete:
+    title: "Wähle einen Warp zum Löschen"
+    click: "Linksklick zum Löschen"
+    current: "Aktueller Warpname: "
+
+  icon:
+    title: "Wähle einen Warp zum Ändern des Symbols -"
+    click: "Linksklick zum Ändern"
+    current: "Aktuelles Symbol: "
+
+  rename:
+    title: "Wähle einen Warp zum Umbenennen"
+    click: "Linksklick zum Umbenennen"
+    current: "Aktueller Warpname: "
+
+  main:
+    title: "Warp-Menü -"
+    info: "PinWarp Warps"
+    teleport: "Klicke den Warp zum Teleportieren"
+    page: "Aktuelle Seite: "
+    owner: "Ersteller: "
+    click: "Klicken zum Teleportieren"
+    previous: "Vorherige Seite"
+    next: "Nächste Seite"
+    create: "Warp erstellen"
+    icon: "Warp-Symbol ändern"
+    rename: "Warp umbenennen"
+    delete: "Warp löschen"
+    close: "Menü schließen"
+
+listener:
+  rename:
+    input: "Gib den neuen Warpnamen ein"
+    success: "Umbenennung erfolgreich"
+
+  delete:
+    confirm: "Gib YES ein, um das Löschen zu bestätigen"
+    cancel: "Löschen abgebrochen"
+    success: "Warp gelöscht"
+
+  icon:
+    input: "Halte einen Gegenstand und sende T"
+    hand: "Bitte halte einen Gegenstand"
+    success: "Symbol erfolgreich geändert"
+
+  create:
+    help: "Verwende /pinwarp create <Name>"
+manager:
+  load: "%count% Warps geladen"
+  save: "%count% Warps gespeichert"
+  save-failed: "Speichern der Warps fehlgeschlagen: %error%"
+
+  create:
+    exists: "Warpname existiert bereits!"
+    success: "Warp %warp% erfolgreich erstellt!"
+
+  list:
+    empty: "Keine Warps verfügbar!"
+    title: "===== Warp-Liste ====="
+    item: "&e%warp% &7Ersteller: %owner%"
+
+  teleport:
+    notfound: "Warp nicht gefunden!"
+    success: "Zu %warp% teleportiert"
+
+  price:
+    notfound: "Warp nicht gefunden!"
+    notowner: "Du bist nicht der Besitzer dieses Warps!"
+    success: "Preis erfolgreich aktualisiert!"

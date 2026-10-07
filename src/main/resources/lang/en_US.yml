@@ -1,0 +1,87 @@
+pinwarp:
+  setprice: "Please use /pw setprice <warp> <price>"
+  onlyplayersend: "Only players can use this command."
+  unknown: "Unknown or incorrect command. Use /pw <create|list|tp|setprice|me>"
+  teleportwarps: "Please use /pw tp <warp>"
+  loadon: "PinWarp has been enabled!"
+  loadoff: "PinWarp has been disabled!"
+  inputprice: "Please enter a valid price!"
+  createwarps: "Please use /pw create <warp name>"
+
+menu:
+  main:
+    title: "Warp List"
+    info: "&8[&eWarp Info&8]"
+    infoLore:
+      - "&8▪ &7Server warp system"
+      - "&8▪ &7Click a warp to teleport"
+      - "&8▪ &7Warps are sorted by visits"
+    visits: "&8▪ &7Visits &f"
+    owner: "&8▪ &7Owner &f"
+    price: "&8▪ &7Price &f"
+    hint: "   &8▪ &dLeft-click to teleport   "
+    previous: "&8[&aPrevious&8]"
+    next: "&8[&aNext&8]"
+    create: "&8[&aCreate Warp&8]"
+    rename: "&8[&aRename Warp&8]"
+    icon: "&8[&aChange Icon&8]"
+    me: "&8[&eMy Warps&8]"
+    delete: "&8[&cDelete Warp&8]"
+
+  me:
+    title: "My Warps"
+    back: "&8[&aBack&8]"
+
+  delete:
+    title: "Select a warp to delete"
+    click: "&cLeft-click to delete warp"
+
+  icon:
+    title: "Select a warp to change its icon"
+    click: "&eLeft-click to change icon"
+
+  rename:
+    title: "Select a warp to rename"
+    click: "&eLeft-click to rename warp"
+
+listener:
+  rename:
+    input: "Enter the new warp name"
+    success: "Rename successful"
+    exists: "That warp name already exists!"
+
+  delete:
+    confirm: "Type YES to confirm deletion"
+    cancel: "Deletion cancelled"
+    success: "Warp deleted"
+
+  icon:
+    input: "Hold an item and send T"
+    hand: "Please hold an item"
+    success: "Icon changed successfully"
+
+  create:
+    help: "Use /pinwarp create <name>"
+
+manager:
+  load: "Loaded %count% warps"
+  save: "Saved %count% warps"
+  save-failed: "Failed to save warps: %error%"
+
+  create:
+    exists: "Warp name already exists!"
+    success: "Warp %warp% created successfully!"
+
+  list:
+    empty: "No warps available!"
+    title: "===== Warp List ====="
+    item: "&e%warp% &7Owner: %owner% &7Visits: %visits%"
+
+  teleport:
+    notfound: "Warp not found!"
+    success: "Teleported to %warp%"
+
+  price:
+    notfound: "Warp not found!"
+    notowner: "You are not the owner of this warp!"
+    success: "Price updated successfully!"

@@ -1,0 +1,80 @@
+pinwarp:
+  setprice: "请使用/pw setprice <地标> <价格>"
+  onlyplayersend: "只有玩家可以使用该命令。"
+  unknown: "未知或错误的命令，请使用/pw <create|list|tp|setprice>"
+  teleportwarps: "请使用/pw tp <地标>"
+  loadon: "PinWarp 已启动！"
+  loadoff: "PinWarp 已关闭！"
+  inputprice: "请输入正确的价格！"
+  createwarps: "请使用/pw create <地标名>"
+menu:
+  delete:
+    title: "选择要删除的地标"
+    click: "左键点击删除地标"
+    current: "当前地标名: "
+
+  icon:
+    title: "选择要修改图标的地标 -"
+    click: "左键点击修改图标"
+    current: "当前图标: "
+
+  rename:
+    title: "选择要改名的地标"
+    click: "左键点击修改地标名"
+    current: "当前地标名: "
+
+  main:
+    title: "地标菜单 -"
+    info: "PinWarp 地标"
+    teleport: "点击地标即可传送"
+    page: "当前页数: "
+    owner: "创建者: "
+    click: "点击传送"
+    previous: "上一页"
+    next: "下一页"
+    create: "创建地标"
+    icon: "更改地标图案"
+    rename: "重命名地标"
+    delete: "删除地标"
+    close: "关闭菜单"
+
+listener:
+  rename:
+    input: "请输入新的地标名称"
+    success: "重命名成功"
+
+  delete:
+    confirm: "输入 YES 确认删除地标"
+    cancel: "删除已取消"
+    success: "地标已删除"
+
+  icon:
+    input: "手持物品后发送 T"
+    hand: "请手持一个物品"
+    success: "图标修改成功"
+
+  create:
+    help: "使用 /pinwarp create <名称>"
+manager:
+  load: "已加载 %count% 个地标"
+  save: "已保存 %count% 个地标"
+  save-failed: "保存地标失败：%error%"
+
+  create:
+    exists: "地标名称已存在！"
+    success: "地标 %warp% 创建成功！"
+
+  list:
+    empty: "没有可用地标！"
+    title: "===== 地标列表 ====="
+    item: "&e%warp% &7创建者：%owner%"
+
+  teleport:
+    notfound: "找不到该地标！"
+    success: "已传送到 %warp%"
+
+  price:
+    notfound: "找不到该地标！"
+    notowner: "你不是该地标拥有者！"
+    success: "价格修改成功！"
+

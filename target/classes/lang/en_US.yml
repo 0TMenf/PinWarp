@@ -1,0 +1,79 @@
+pinwarp:
+  setprice: "Please use /pw setprice <warp> <price>"
+  onlyplayersend: "Only players can use this command."
+  unknown: "Unknown or incorrect command. Use /pw <create|list|tp|setprice>"
+  teleportwarps: "Please use /pw tp <warp>"
+  loadon: "PinWarp has been enabled!"
+  loadoff: "PinWarp has been disabled!"
+  inputprice: "Please enter a valid price!"
+  createwarps: "Please use /pw create <warp name>"
+menu:
+  delete:
+    title: "Select a warp to delete"
+    click: "Left-click to delete warp"
+    current: "Current warp name: "
+
+  icon:
+    title: "Select a warp to change its icon -"
+    click: "Left-click to change icon"
+    current: "Current icon: "
+
+  rename:
+    title: "Select a warp to rename"
+    click: "Left-click to rename warp"
+    current: "Current warp name: "
+
+  main:
+    title: "Warp Menu -"
+    info: "PinWarp Warps"
+    teleport: "Click the warp to teleport"
+    page: "Current page: "
+    owner: "Owner: "
+    click: "Click to teleport"
+    previous: "Previous Page"
+    next: "Next Page"
+    create: "Create Warp"
+    icon: "Change Warp Icon"
+    rename: "Rename Warp"
+    delete: "Delete Warp"
+    close: "Close Menu"
+
+listener:
+  rename:
+    input: "Enter the new warp name"
+    success: "Rename successful"
+
+  delete:
+    confirm: "Type YES to confirm deletion"
+    cancel: "Deletion cancelled"
+    success: "Warp deleted"
+
+  icon:
+    input: "Hold an item and send T"
+    hand: "Please hold an item"
+    success: "Icon changed successfully"
+
+  create:
+    help: "Use /pinwarp create <name>"
+manager:
+  load: "Loaded %count% warps"
+  save: "Saved %count% warps"
+  save-failed: "Failed to save warps: %error%"
+
+  create:
+    exists: "Warp name already exists!"
+    success: "Warp %warp% created successfully!"
+
+  list:
+    empty: "No warps available!"
+    title: "===== Warp List ====="
+    item: "&e%warp% &7Owner: %owner%"
+
+  teleport:
+    notfound: "Warp not found!"
+    success: "Teleported to %warp%"
+
+  price:
+    notfound: "Warp not found!"
+    notowner: "You are not the owner of this warp!"
+    success: "Price updated successfully!"

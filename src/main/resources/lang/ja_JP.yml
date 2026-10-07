@@ -1,0 +1,79 @@
+pinwarp:
+  setprice: "/pw setprice <ワープ名> <価格> を使用してください"
+  onlyplayersend: "このコマンドはプレイヤーのみ使用できます。"
+  unknown: "不明または誤ったコマンドです。 /pw <create|list|tp|setprice> を使用してください"
+  teleportwarps: "/pw tp <ワープ名> を使用してください"
+  loadon: "PinWarp が有効になりました！"
+  loadoff: "PinWarp が無効になりました！"
+  inputprice: "正しい価格を入力してください！"
+  createwarps: "/pw create <ワープ名> を使用してください"
+menu:
+  delete:
+    title: "削除するワープを選択"
+    click: "左クリックで削除"
+    current: "現在のワープ名："
+
+  icon:
+    title: "アイコンを変更するワープを選択 -"
+    click: "左クリックでアイコン変更"
+    current: "現在のアイコン："
+
+  rename:
+    title: "名前を変更するワープを選択"
+    click: "左クリックで名前変更"
+    current: "現在のワープ名："
+
+  main:
+    title: "ワープメニュー -"
+    info: "PinWarp ワープ"
+    teleport: "ワープをクリックしてテレポート"
+    page: "現在のページ："
+    owner: "作成者："
+    click: "クリックでテレポート"
+    previous: "前のページ"
+    next: "次のページ"
+    create: "ワープを作成"
+    icon: "ワープアイコン変更"
+    rename: "ワープ名変更"
+    delete: "ワープ削除"
+    close: "メニューを閉じる"
+
+listener:
+  rename:
+    input: "新しいワープ名を入力してください"
+    success: "名前の変更に成功しました"
+
+  delete:
+    confirm: "削除を確認するには YES と入力してください"
+    cancel: "削除がキャンセルされました"
+    success: "ワープが削除されました"
+
+  icon:
+    input: "アイテムを持った状態で T を送信"
+    hand: "アイテムを手に持ってください"
+    success: "アイコンが正常に変更されました"
+
+  create:
+    help: "/pinwarp create <名前> を使用"
+manager:
+  load: "%count% 個のワープを読み込みました"
+  save: "%count% 個のワープを保存しました"
+  save-failed: "ワープの保存に失敗しました：%error%"
+
+  create:
+    exists: "ワープ名は既に存在します！"
+    success: "ワープ %warp% が作成されました！"
+
+  list:
+    empty: "利用可能なワープがありません！"
+    title: "===== ワープ一覧 ====="
+    item: "&e%warp% &7作成者：%owner%"
+
+  teleport:
+    notfound: "ワープが見つかりません！"
+    success: "%warp% にテレポートしました"
+
+  price:
+    notfound: "ワープが見つかりません！"
+    notowner: "あなたはこのワープの所有者ではありません！"
+    success: "価格が正常に更新されました！"
